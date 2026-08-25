@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProofMesh</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <section class="hero">
+      <p class="badge">WEB3 IDENTITY TOOLKIT</p>
+
+      <h1>ProofMesh</h1>
+
+      <p class="subtitle">
+        Create identities, sign messages, and verify cryptographic proofs.
+      </p>
+
+      <div class="actions">
+        <button id="generateBtn">Generate Identity</button>
+        <button id="signBtn">Sign Message</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Your Identity</h2>
+
+      <div class="field">
+        <span>DID</span>
+        <code id="did">Not generated yet</code>
+      </div>
+
+      <div class="field">
+        <span>Public Key</span>
+        <code id="publicKey">Not generated yet</code>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Message Proof</h2>
+
+      <textarea
+        id="message"
+        placeholder="Write a message to sign..."
+      ></textarea>
+
+      <div class="field">
+        <span>Proof</span>
+        <code id="proof">No proof generated yet</code>
+      </div>
+    </section>
+
+    <footer>
+      <p>ProofMesh • Lightweight Web3 Identity & Proof Toolkit</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
